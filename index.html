@@ -1,17 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>suzunagiの占い</title>
-    <style>
-        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
-        .fortune-section { border: 2px solid #ddd; padding: 20px; border-radius: 10px; background: #fafafa; margin-top: 20px; }
-        .result-display { font-weight: bold; font-size: 1.5rem; color: #d63031; margin-top: 10px; }
-        button { padding: 8px 16px; cursor: pointer; background: #0984e3; color: white; border: none; border-radius: 5px; }
-        input { padding: 8px; border: 1px solid #ccc; border-radius: 5px; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -33,11 +26,10 @@
     </section>
 
     <script>
+        // JavaScriptのロジックはそのままです
         function calcLucky() {
             const input = document.getElementById("userNumber").value;
             if (!input) return alert("数字を入力してね！");
-            
-            // Javaのロジックを模した計算
             const lucky = (parseInt(input) * 31 + 7) % 100;
             document.getElementById("luckyResult").innerText = "あなたのラッキーナンバーは【 " + lucky + " 】です。";
         }
@@ -46,10 +38,8 @@
             const fortunes = ["大吉", "吉", "小吉", "凶"];
             const random = Math.floor(Math.random() * fortunes.length);
             const result = fortunes[random];
-            
             document.getElementById("omikujiResult").innerText = "運勢結果： " + result;
         }
     </script>
-
 </body>
 </html>
