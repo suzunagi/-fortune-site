@@ -1,0 +1,41 @@
+/* --------------------
+        占いセクション
+-------------------- */
+
+section {
+  margin-top: 40px;
+  padding: 20px;
+  border: 2px solid var(--theme-color);
+  border-radius: 10px;
+}
+
+/* 入力ボックス */
+input[type="number"] {
+  border: 1px solid var(--theme-color);
+  border-radius: 4px;
+  padding: 8px;
+  width: 100px;
+}
+
+/* ボタン */
+button {
+  background-color: var(--theme-color);
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* 結果の文字 */
+#luckyResult, #omikujiResult {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff6347; /* 目立つようにオレンジ系 */
+}
