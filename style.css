@@ -1,18 +1,18 @@
-/* 全体の設定 */
+
 body {
   margin: 0;
   padding: 40px 20px;
-  background-color: #f4f7f6 !important; /* 薄いグレー背景 */
-  color: #333333 !important;           /* 濃いグレー文字 */
+  background-color: #f4f7f6 !important; 
+  color: #333333 !important;           
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* 占いの箱 */
+
 .fortune-section {
-  background-color: #ffffff !important; /* 真っ白な箱 */
+  background-color: #ffffff !important; 
   border: 1px solid #dddddd !important;
   border-radius: 12px;
   padding: 30px;
@@ -23,19 +23,16 @@ body {
   text-align: center;
 }
 
-/* 見出し */
 h1, h3 {
-  color: #00a0a0 !important; /* テーマカラー */
-  background-color: transparent !important; /* 背景色を透明にリセット */
+  color: #00a0a0 !important; 
+  background-color: transparent !important; 
 }
 
-/* 説明テキスト */
 p {
   color: #666666 !important;
   background-color: transparent !important;
 }
 
-/* ボタン */
 button {
   background-color: #00a0a0 !important;
   color: #ffffff !important;
@@ -46,12 +43,11 @@ button {
   cursor: pointer;
 }
 
-/* 結果表示エリア */
 .result-display {
   margin-top: 15px;
   font-size: 1.2rem;
-  color: #d63031 !important; /* 赤色 */
-  background-color: #fff0f0 !important; /* 薄い赤背景 */
+  color: #d63031 !important; 
+  background-color: #fff0f0 !important; 
   padding: 10px;
   border-radius: 5px;
 }
